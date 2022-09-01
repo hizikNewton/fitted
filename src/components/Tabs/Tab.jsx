@@ -5,7 +5,6 @@ import DropDown from "../DropDown";
 import useOnClickOutside from "../../hooks/UseOnClickOutside";
 import { useState } from "react";
 import { useRef } from "react";
-import { useEffect } from "react";
 
 const tableHeadData = [
   {

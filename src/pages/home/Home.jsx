@@ -19,7 +19,7 @@ const Home = () => {
       <ProfileContainer>
         <ProfileSummary>
           <div className="img-container">
-            <img src={human}></img>
+            <img src={human} alt={"headshot"}></img>
           </div>
           <FirstDivSummary>
             <p>{"Samuel Oladokun"}</p>

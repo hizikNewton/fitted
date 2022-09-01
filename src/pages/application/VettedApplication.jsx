@@ -96,7 +96,7 @@ const Vettedapplication = ({ setApplicaation }) => {
         <Story>
           <div className="story-img">
             <div className="img-container">
-              <img src={human} />
+              <img src={human} alt={"display-shot"} />
             </div>
             <div className="user-story">
               {Object.entries(data).map(([keys, values], idx) => {

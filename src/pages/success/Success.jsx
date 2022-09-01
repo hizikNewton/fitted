@@ -8,7 +8,7 @@ export const Success = () => {
     <Content className="content">
       <SucessContainer>
         <div>
-          <img src={SuccessImage} />
+          <img src={SuccessImage} alt={"successful"} />
         </div>
 
         <div className="sucess-txt">
