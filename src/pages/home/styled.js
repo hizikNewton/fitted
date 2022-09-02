@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const ProfileContainer = styled.div`
+  color: #828282;
   display: block;
   position: relative;
-  width: 100%;
+  width: fit-content;
   ::before {
     content: "";
     position: absolute;
@@ -11,12 +12,7 @@ export const ProfileContainer = styled.div`
     top: -55px;
     width: 100%;
     z-index: -1;
-    background: linear-gradient(
-      192.77deg,
-      rgba(0, 240, 255, 0.8) -22.81%,
-      rgba(83, 118, 255, 0.8) 28.04%,
-      rgba(0, 12, 182, 0.8) 114.1%
-    );
+    background: #f2f4f9;
 
     border-radius: 20px;
   }
@@ -26,28 +22,77 @@ export const ProfileSummary = styled.div`
   background: #ffffff;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
   border-radius: 25px;
-  margin: 0 25px;
-  padding: 22px;
+  margin: 0 10px;
+  padding: 10px;
+  height: 100px;
+  width: fit-content;
   .img-container {
     border-radius: 21px;
-    padding: 16px;
+    padding: 8px;
     position: relative;
-    top: -75px;
+    top: -50px;
     background: #fff;
+    img {
+      width: 85px;
+      height: 85px;
+    }
   }
 `;
 
-export const FirstDivSummary = styled.div``;
+export const FirstDivSummary = styled.div`
+  :first-child {
+    color: #3f434a;
+    font-size: 14px;
+    line-height: 28px;
+    font-family: KotoriBold;
+    margin-bottom: 5px;
+  }
+`;
+
+export const ProfileDetails = styled.div`
+  p {
+    display: flex;
+    align-items: center;
+    span.profile__key {
+      width: 80px;
+      font-family: KotoriRegular;
+      font-size: 12px;
+      line-height: 20px;
+    }
+    span.profile__value {
+      font-family: KarlaRegular;
+      font-size: 10px;
+      color: #4f4f4f;
+    }
+  }
+`;
 
 export const SecondDivSummary = styled.div`
   display: flex;
   column-gap: 1em;
   .phoneBox {
-    padding: 35px;
+    padding: 25px;
     display: flex;
     align-items: center;
     span {
       display: block;
+    }
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  p.title {
+    margin-left:10px;
+    title__key {
+      font-family:"KotoriBold"
+      font-size: 14px;
+      color: #828282;
+    }
+    title__value {
+      font-family:"KarlaRegular"
+      font-size: 12px;
+      color: #4F4F4F;;
     }
   }
 `;

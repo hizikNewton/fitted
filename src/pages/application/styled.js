@@ -17,7 +17,7 @@ export const Form = styled.div`
     margin-bottom: 10px;
   }
   > div {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .input-wrapper {
@@ -34,7 +34,7 @@ export const Form = styled.div`
   input,
   select {
     width: fill-available;
-    padding: 14px;
+    padding: 10px;
     padding-left: 48px;
     border: 1px solid #bdbdbd;
     border-radius: 7px;
@@ -73,21 +73,21 @@ export const Story = styled.div`
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
     border-radius: 47px;
     width: fit-content;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
     img {
       padding: 16px;
       border-radius: 21px;
-      width: 100px;
-      height: 100px;
+      width: 80px;
+      height: 80px;
     }
   }
   .user-story {
     div.item {
       width: 100%;
       display: flex;
-      margin-block: 10px;
+      margin-block: 4px;
       span.item_key {
-        width: 200px;
+        width: 150px;
       }
     }
   }

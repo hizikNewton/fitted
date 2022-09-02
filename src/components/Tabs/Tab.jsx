@@ -4,6 +4,8 @@ import { Tab, TabContainer, Table, TableContainer } from "./styled";
 import DropDown from "../DropDown";
 import useOnClickOutside from "../../hooks/UseOnClickOutside";
 import { useState } from "react";
+
+import { ReactComponent as Search } from "../../assets/Search.svg";
 import { useRef } from "react";
 
 const tableHeadData = [
@@ -79,13 +81,16 @@ export const Tabs = () => {
       <Tab>
         <button>{"Transaction History"}</button>
 
-        <button>{"Transaction History"}</button>
+        <button>{"Billing Address"}</button>
 
-        <button>{"Transaction History"}</button>
+        <button>{"Account Settings"}</button>
       </Tab>
       <TableContainer>
         <div className="topActions">
-          <input placeholder="Search order" />
+          <div className="input-wrapper">
+            <Icons Comp={Search} />
+            <input placeholder="Search order" />
+          </div>
           <select>
             <option>{"actions"}</option>
           </select>

@@ -86,11 +86,11 @@ const Vettedapplication = ({ setApplicaation }) => {
     <Content className="content">
       <header>
         <h4>{"Vetted Tailor Application"}</h4>
-        <h6>
+        <p>
           {
             "One step closer to the goal! please provide us with your Bank details with which you will be recieving payment."
           }
-        </h6>
+        </p>
       </header>
       <div className="form-content">
         <Story>

@@ -7,6 +7,7 @@ import { ReactComponent as Email } from "../../assets/email.svg";
 import {
   FirstDivSummary,
   ProfileContainer,
+  ProfileDetails,
   ProfileSummary,
   SecondDivSummary,
 } from "./styled";
@@ -23,35 +24,35 @@ const Home = () => {
           </div>
           <FirstDivSummary>
             <p>{"Samuel Oladokun"}</p>
-            <div>
+            <ProfileDetails>
               <p>
-                <span>{"Gender"}</span>
-                <span>{data.Gender}</span>
+                <span className="profile__key">{"Gender"}</span>
+                <span className="profile__value">{data.Gender}</span>
               </p>
               <p>
-                <span>{"Gender"}</span>
-                <span>{data.Gender}</span>
+                <span className="profile__key">{"Location"}</span>
+                <span className="profile__value">{data.Location}</span>
               </p>
               <p>
-                <span>{"Gender"}</span>
-                <span>{data.Gender}</span>
+                <span className="profile__key">{"Sew Gender"}</span>
+                <span className="profile__value">{data["Sew Gender"]}</span>
               </p>
-            </div>
+            </ProfileDetails>
           </FirstDivSummary>
 
           <SecondDivSummary>
             <div className={"phoneBox"}>
               <Icons Comp={Phone}></Icons>
-              <p>
-                <span>{"Phone Number"}</span>
-                <span>{data["Phone Number"]}</span>
+              <p className="title">
+                <span className="title__key">{"Phone Number"}</span>
+                <span className="title__value">{data["Phone Number"]}</span>
               </p>
             </div>
             <div className={"phoneBox"}>
               <Icons Comp={Email}></Icons>
-              <p>
-                <span>{"Email Address"}</span>
-                <span>{data.email}</span>
+              <p className="title">
+                <span className="title__key">{"Email Address"}</span>
+                <span className="title__value">{data.email}</span>
               </p>
             </div>
           </SecondDivSummary>

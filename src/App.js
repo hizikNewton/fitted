@@ -23,7 +23,7 @@ import { ReactComponent as Notification } from "./assets/notification.svg";
 import { ReactComponent as Back } from "./assets/back.svg";
 function App() {
   const [currentPage, setCurrentPage] = useState("myProfile");
-  const [application, setApplication] = useState("success");
+  const [application, setApplication] = useState();
   const handleClick = (e) => {
     const { value } = e.target;
     setApplication(value);
@@ -45,12 +45,16 @@ function App() {
             className="avatar"
             style={{ margin: "auto", width: "74px", height: "74px" }}
           >
-            <div className="avatar__letters">{"SO"}</div>
+            <div className="avatar__letters">{"SA"}</div>
           </div>
           <p className="profile__name">{profileData.name}</p>
-          <p>{profileData.email}</p>
-          <p>{profileData.desc}</p>
-          <select name={"vetTailor"} onClick={handleClick}>
+          <p style={{ fontSize: "14px" }}>{profileData.email}</p>
+          <p style={{ fontSize: "12px" }}>{profileData.desc}</p>
+          <select
+            className="select__dashboard"
+            name={"vetTailor"}
+            onClick={handleClick}
+          >
             <option>{"Non-Vetted Tailor"}</option>
             <option value={"applied"}>{"Apply to be a vetted tailor"}</option>
           </select>
