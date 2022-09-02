@@ -34,7 +34,7 @@ function App() {
       return <Vettedapplication setApplicaation={setApplication} />;
     } else if (application === "success") {
       return <Success setApplicaation={setApplication} />;
-    } else return <Home />;
+    } else return <Home setApplication={setApplication} />;
   };
   return (
     <div className="App">

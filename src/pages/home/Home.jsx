@@ -14,7 +14,7 @@ import {
 import human from "../../assets/human.png";
 import Tab from "../../components/Tabs";
 
-const Home = () => {
+const Home = ({ setApplication }) => {
   return (
     <>
       <ProfileContainer>
@@ -57,6 +57,9 @@ const Home = () => {
             </div>
           </SecondDivSummary>
         </ProfileSummary>
+        <button className="btn-cta" onClick={() => setApplication("applied")}>
+          {"Apply to be a vetted tailor"}
+        </button>
       </ProfileContainer>
       <Tab />
     </>

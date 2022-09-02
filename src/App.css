@@ -1,7 +1,11 @@
 .App {
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
+  height: 100%;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 3fr;
+}
+@media (max-width: 768px) {
+  .App {
+    display: block;
+  }
 }

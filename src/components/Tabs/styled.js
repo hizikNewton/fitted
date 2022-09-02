@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const TabContainer = styled.div`
   margin-top: 30px;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const Tab = styled.div`

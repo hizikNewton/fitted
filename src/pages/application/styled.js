@@ -12,6 +12,12 @@ export const Form = styled.div`
       }
     }
   }
+  @media (max-width: 768px) {
+    width: auto;
+    .first-row {
+      display: none;
+    }
+  }
   label {
     display: block;
     margin-bottom: 10px;
@@ -80,6 +86,9 @@ export const Story = styled.div`
       width: 80px;
       height: 80px;
     }
+  }
+  @media (max-width: 768px) {
+    width: auto;
   }
   .user-story {
     div.item {

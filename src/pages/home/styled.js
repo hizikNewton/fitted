@@ -16,6 +16,26 @@ export const ProfileContainer = styled.div`
 
     border-radius: 20px;
   }
+
+  .btn-cta {
+    display: none;
+  }
+  @media (max-width: 768px) {
+    button.btn-cta {
+      display: block;
+      background: #b7076b;
+      border-radius: 7px;
+      padding: 17px 21px;
+      border: none;
+      font-style: italic;
+      font-weight: 800;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.5px;
+      color: #ffffff;
+      cursor: pointer;
+    }
+  }
 `;
 export const ProfileSummary = styled.div`
   display: flex;
@@ -35,6 +55,15 @@ export const ProfileSummary = styled.div`
     img {
       width: 85px;
       height: 85px;
+    }
+  }
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+
+    .img-container {
+      top: 0;
     }
   }
 `;
@@ -80,6 +109,12 @@ export const SecondDivSummary = styled.div`
     svg {
       width: 40px;
       height: 40px;
+    }
+   
+  }  @media (max-width: 768px) {
+    flex-direction:column;
+    .phoneBox{
+      padding: 0px;
     }
   }
   p.title {

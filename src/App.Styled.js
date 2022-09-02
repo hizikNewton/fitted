@@ -68,7 +68,7 @@ export const Aside = styled.aside`
     rgba(83, 118, 255, 0.8) 28.04%,
     rgba(0, 12, 182, 0.8) 114.1%
   );
-  box-shadow: 7px 0px 106px rgba(0, 0, 0, 0.1);
+  box-shadow: 7px 0px 106px (0, 0, 0, 0.1);
   border-radius: 2px;
   .avatar {
     display: flex;
@@ -77,6 +77,9 @@ export const Aside = styled.aside`
   .fist {
     position: absolute;
     bottom: 0;
+  }
+  @media (max-width: 768px) {
+    display: none;
   }
 `;
 
@@ -156,6 +159,9 @@ export const Main = styled.main`
   z-index: 2;
   .main__content_body {
     padding: 80px;
+    @media (max-width: 768px) {
+      padding: 20px;
+    }
   }
   .handOne {
     position: absolute;
@@ -192,5 +198,8 @@ export const Content = styled.div`
   .form-content {
     display: flex;
     width: 100%;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 `;

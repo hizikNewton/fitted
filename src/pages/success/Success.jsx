@@ -19,7 +19,7 @@ export const Success = () => {
           Goodluck!`}
           </p>
         </div>
-        <div className="btn-cta">
+        <div className="btn-">
           <button>{"Return to Dashboard"}</button>
         </div>
       </SucessContainer>
